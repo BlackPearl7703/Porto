@@ -18,7 +18,7 @@ import {
 import Education from "./components/Education";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { ContactForm } from "./components/Talk";
-
+import { Analytics } from "@vercel/analytics/next"
 function App() {
   return (
     <>
@@ -86,6 +86,7 @@ function App() {
           <Route path="/talk" element={<ContactForm />} />
         </Routes>
       </div>
+      <Analytics />
     </>
   );
 }
