@@ -1,6 +1,6 @@
 import ExpertiseCard from "./ExpertiseCard";
-import React, { useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import  { useState } from "react";
+
 import "./Expertise.css";
 import LanguagesCard from "./skills/LanguagesCard";
 import { FullStackCard } from "./skills/FullStackCard";

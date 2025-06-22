@@ -1,10 +1,10 @@
-import { useState } from "react";
+
 
 import "./App.css";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
+
 import Expertise from "./components/Expertise";
-import { Route, Router, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import LanguagesCard from "./components/skills/LanguagesCard";
 import Experience from "./components/Experience";

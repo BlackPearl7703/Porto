@@ -1,5 +1,5 @@
 export const FullStackCard = () => {
-  const specialMap = {
+  const specialMap: { [key: string]: string } = {
     "C++": "cpp",
     "C#": "csharp",
     "Node.js": "nodejs",
