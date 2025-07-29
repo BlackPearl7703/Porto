@@ -107,7 +107,7 @@ void main() {
 }
 `;
 
-const MetaBalls = ({
+export const MetaBalls = ({
   className = "",
   color = "#ffffff",
   speed = 0.3,
@@ -284,4 +284,4 @@ const MetaBalls = ({
   return <div ref={containerRef} className={`metaballs-container ${className}`} />;
 };
 
-export default MetaBalls;
+

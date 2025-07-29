@@ -1,5 +1,6 @@
+import { DecryptedText } from "./DecryptedText";
 import "./hero.css";
-import DecryptedText from "../components/TextDecryption";
+
 const Hero = () => {
   return (
     <div className=" h-screen w-full flex text-black justify-center items-center gap-9 ">

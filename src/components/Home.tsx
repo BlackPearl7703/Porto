@@ -1,6 +1,6 @@
-import { Meta } from "react-router-dom";
+import { MetaBalls } from "./cursor-animation/Metaballs";
 import Hero from "./Hero";
-import MetaBalls from "./cursor-animation/Metaballs";
+
 
 const Home = () => {
   return (

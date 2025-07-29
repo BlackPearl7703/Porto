@@ -1,4 +1,3 @@
-import ExpertiseCard from "./ExpertiseCard";
 import { useState } from "react";
 
 import "./Expertise.css";
