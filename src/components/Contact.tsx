@@ -28,13 +28,13 @@ export function Contact() {
       <h3 className="text-lg text-black font-semibold">Contact Me</h3>
       <input
         name="name"
-        placeholder="Name"
+        placeholder="Your name"
         className="w-full p-2 border rounded"
         required
       />
       <input
         name="email"
-        placeholder="Email"
+        placeholder="Your email"
         className="w-full p-2 border rounded"
         required
       />

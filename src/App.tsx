@@ -1,5 +1,3 @@
-
-
 import "./App.css";
 import Header from "./components/Header";
 
@@ -18,13 +16,17 @@ import {
 import Education from "./components/Education";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { ContactForm } from "./components/Talk";
-import { Analytics } from "@vercel/analytics/next"
+
+import Projects from "./components/Projects";
+
 function App() {
+  // console.log("App component rendered");
   return (
     <>
+      {/* bg-linear-to-r from-amber-500 via-orange-500 to-red-500 */}
       <div
         className="relative w-[100vw] h-screen 
-     bg-linear-to-r from-amber-500 via-orange-500 to-red-500
+        bg-[#262626]
         text-white p-4 flex flex-col
        justify-evenly items-center shadow-md"
       >
@@ -79,6 +81,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/experience" element={<Experience />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/education" element={<Education />} />
           <Route path="/expertise/*" element={<Expertise />}>
             <Route path="languages" element={<LanguagesCard />} />
@@ -86,7 +89,7 @@ function App() {
           <Route path="/talk" element={<ContactForm />} />
         </Routes>
       </div>
-      <Analytics />
+      {/* <Analytics /> */}
     </>
   );
 }

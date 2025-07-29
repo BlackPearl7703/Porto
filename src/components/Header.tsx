@@ -22,6 +22,7 @@ const Header = () => {
               <li>{<HoverText text="Experience" />}</li>
               <li>{<HoverText text="Expertise" />}</li>
               <li>{<HoverText text="Projects" />}</li>
+              {/* <li>{<HoverText text="Talk" />}</li> */}
             </ul>
           </nav>
         </div>
@@ -38,3 +39,5 @@ const Header = () => {
 };
 
 export default Header;
+
+

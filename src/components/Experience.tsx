@@ -9,10 +9,12 @@ const Experience = () => {
     >
       <p className="text-4xl  text-white mb-5  ">About me </p>
       <div
-        className="flex flex-col justify-center items-center border-2 p-4
-      shadow-lg  border-white rounded-md "
+        className="flex flex-col justify-center items-center  p-4
+      shadow-lg  rounded-md "
       >
-        <p className="text-2xl font-bold italic mb-5 underline">Internships</p>
+        <h3 className="text-[#a8a29e] text-2xl font-bold italic mb-5 ">
+          Internships
+        </h3>
 
         <div
           className="flex
@@ -24,6 +26,11 @@ const Experience = () => {
           {/* summer intern */}
           <InternExperienceCard internInfo={internData[1]} />
         </div>
+      </div>
+
+      <div className="flex flex-col items-center justify-center mt-10">
+        <h3 className="text-[#a8a29e] text-2xl font-bold italic mb-5">Currently working...</h3>
+        <InternExperienceCard internInfo={internData[2]} />
       </div>
     </div>
   );

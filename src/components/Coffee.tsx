@@ -6,6 +6,19 @@ export function Coffee() {
         const qrImage = document.querySelector(".qr-code");
         if (qrImage) {
             qrImage.classList.toggle("hidden");
+            // const buttonText=document.querySelector(".button-text");
+            // buttonText?.innerHTML.toggle(['Proceed','changed my mind'])
+
+const buttonText = document.querySelector(".button-text");
+if (buttonText) {
+  buttonText.innerHTML =
+    buttonText.innerHTML === "Proceed"
+      ? "changed my mind"
+      : "Proceed";
+
+}
+
+
         }
     };
   return (
@@ -22,23 +35,16 @@ export function Coffee() {
         // show qr on click
         onClick={handleQrClick}
         rel="noopener noreferrer"
-        className="bg-red-500 text-white px-4 py-2 rounded hover:bg-yellow-600 transition-colors"
+        className="button-text bg-red-500 text-white px-4 py-2 rounded hover:bg-yellow-600 transition-colors"
       >
         Proceed 
       </a>
-      {/* <div className="qr-code flex flex-col space-y-2" >
-      <img src="./src/assets/image.png" alt="QR Code" className="mt-4 mx-auto h-20 " />
-  <input
-        name="email"
-        placeholder="put your email here for further updates"
-        className="w-full p-2 text-white rounded border-2 border-white"
-        required
-      />
-      </div> */}
+     
       <div className="qr-code hidden text-center space-y-4 mt-8">
-  <h2 className="text-xl font-bold">Buy Me a Coffee ☕</h2>
+  {/* <h2 className="text-xl font-bold">Buy Me a Coffee ☕</h2> */}
   <img src="./src/assets/qrcode.jpeg" alt="UPI QR Code" className="w-48 mx-auto border rounded" />
   <p className="text-gray-600">or click below to pay via UPI app</p>
+  
   <a
     href="upi://pay?pa=princekoshti7703@oksbi&pn=princeKoshti&am=50&cu=INR&tn=See+You+Soon!"
     className="inline-block bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded"
